@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="stylesheet" src="firstwebapp\CSS">
+    <style>
+        /* CSS reset */
+        body {
+            margin: 5px;
+            padding: 0px;
+            background: url('img/bg1.jpg');
+        }
+
+        .left {
+            margin: 0px 0px;
+            padding: 10px 25px;
+            /* border: 2px solid red; */
+            display: inline-block;
+        }
+        .left img{
+            padding: 0px 0px;
+            margin: 0px 0px;
+        }
+        .left p{
+            color: hwb(0 96% 3%);
+            font-size: small;
+            display: inline;
+        }
+        .left h6{
+            color: hwb(0 96% 3%);
+            font-size:large;
+            display: inline-block;
+        }
+        .right{
+            float: right;
+            /* border: 2px solid rgb(242, 0, 255); */
+            padding-right: 25px;
+            color: black;
+        }
+        .middle{
+            /* border: 2px solid blue; */
+            padding: 0px 0px;
+            margin: 0px 0px;
+            display: inline-block;
+            color: white;
+            line-height: 0px;
+            position: relative;
+            right: 25px;
+        }
+        .navbar li{
+            display: inline-block;
+            margin-right: 50px; 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           
+        }
+        .navbar li a:hover{
+            color: rgb(223, 208, 208);
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color: black;
+        }
+        .navbar button{
+            padding: 5px 10px;
+            border-radius: 7px;
+            background-color: #ffa5007d;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .navbar button:hover{
+            background-color: black;
+            color: chocolate;
+        }
+        .ot{
+            border: 2px solid yellowgreen;
+            background: rgba(77, 78, 78, 0.498) ;
+        }
+        .content{
+            /* border: 2px solid maroon; */
+            display: inline-flex;
+            margin-left: 180px;
+            margin-top :100px; 
+            list-style: none;
+            
+           
+            
+           
+        }
+        .ofb{
+            color: rgb(228, 32, 104);
+            font-size: larger;
+            font-weight: 300;
+        }
+      .lc{
+            color: black;
+        }
+        h5{
+            display: inline;
+            color:grey;
+        }
+        .fb{
+            background: #889198b5;
+            box-shadow:10px 10px 5px rgb(241, 70, 70) ;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <header class="ot">
+        <!-- this is for logo -->
+        <div class="left">
+            <img src="img/logo.svg">
+            <!-- <h6>WeDu</h6>
+            <p>communicate.collaborate.create.</p> -->
+
+        </div>
+        <!-- this is for action -->
+        <div class="right">
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Pricing Plans</a></li>
+                <li><a href="">Contact</a></li>
+                <button> Log In</button>
+                <button>Get Started</button>
+            </ul>
+        </div>
+        <div class="middle">
+            <h4>WeDu</h4>
+            <p>Communicate.Collaborate.Create.</p>
+        </div>
+    </header>
+ 
+    <!-- writing form page-->
+
+    <div class="content">
+
+        <fieldset  class="fb">
+            <legend class="ofb">Personal Details</legend>
+            <form action="">
+                <label class="lc">Full Name</label><br>
+                <input  type="text" name="name" placeholder="Jyothi">
+                <input type="text" name="name" placeholder="K N"><br>
+                <h5>first name</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5>last name</h5><br><br>
+
+                <label class="lc" >Email Address</label><br>
+                <input type="text" name="name" placeholder="jyothi22@gmail.com"><br><br>
+
+                <label class="lc">Mobile Number</label><br>
+                <input type="text" name="number" placeholder="123-456-7890"><br><br>
+                  
+                <label class="lc">Gender : </label>
+                <input type="radio" name="gender" value="Male" >Male <input type="radio" name="gender" value="Female">Female
+                <br>
+                <h4>Select courses</h4>
+                <input type="checkbox"  id="course1" name="courses" value="courses">
+                <label for="course1"> Java FullStack</label><br>
+                <input type="checkbox"  id="course2" name="courses" value="courses">
+                <label for="course2"> Python FullStack</label><br>
+                <input type="checkbox"  id="course3" name="courses" value="courses">
+                <label for="course3"> Web Technologies</label><br>
+                <input type="checkbox"  id="course4" name="courses" value="courses">
+                <label for="course4">Mulesoft</label><br>
+                <input type="checkbox"  id="course5" name="courses" value="courses">
+                <label for="course5">IBM Integration</label><br><br>
+
+
+                  
+                <label class="lc">Address</label><br>
+                <input type="text" name="name"><br>
+                <h5>Street Address</h5><br><br>
+                <input type="text" name="name"><br>
+                <h5>Street Address Line2</h5><br><br>
+
+                
+                
+                <!-- <input type="text" name="name"><br>
+                <h5>City</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <br><br> -->
+                <!-- <h5>State/Province</h5><br><br> -->
+
+                <label for="states">Select State</label>
+                <select name="states" id="states">
+                    <option value="karnataka">Karnataka</option>
+                    <option value="goa">Goa</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="mumbai">Mumbai</option>
+
+                </select>
+                <br><br>
+
+                <input type="text" name="name"><br>
+                <h5>zip/postal code</h5><br><br>
+                <button>Submit</button>
+
+
+            </form>
+        </fieldset>
+
+    </div>
+
+
+</body>
+
+</html>
